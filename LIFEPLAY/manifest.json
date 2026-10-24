@@ -1,0 +1,27 @@
+{
+  "id": "./",
+  "name": "LIFEPLAY — Ta vie, ton jeu",
+  "short_name": "LIFEPLAY",
+  "description": "Organise ta vie, gère tes repas, suis ton humeur et apprends en jouant.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f6fc",
+  "theme_color": "#635bff",
+  "orientation": "portrait",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
