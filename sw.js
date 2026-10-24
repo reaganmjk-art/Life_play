@@ -1,4 +1,4 @@
-const CACHE_NAME = "lifeplay-v1";
+const CACHE_NAME = "lifeplay-v3";
 const FILES = ["./", "./index.html", "./manifest.json"];
 self.addEventListener("install", event => {
   event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(FILES)).then(() => self.skipWaiting()));

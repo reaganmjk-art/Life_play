@@ -1,8 +1,9 @@
 {
   "id": "./",
-  "name": "LIFEPLAY — Ta vie, ton jeu",
+  "name": "LIFEPLAY — Your life, your game",
   "short_name": "LIFEPLAY",
-  "description": "Organise ta vie, gère tes repas, suis ton humeur et apprends en jouant.",
+  "description": "Organize your life, manage your meals, track your mood and learn while playing.",
+  "lang": "en",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",

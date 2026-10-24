@@ -1,47 +1,46 @@
-# LIFEPLAY — prototype fonctionnel
+# LIFEPLAY — working prototype
 
-LIFEPLAY est un prototype mobile-first en français pour un projet étudiant. Il regroupe :
-- My Life : tâches quotidiennes et objectif du jour.
-- Food Life : stock alimentaire, dates limites et idées de repas.
-- IT Play : quiz informatique, explications et points XP.
-- Mood Play : journal d'humeur facultatif et idées de pauses.
-- LIFEPLAY CORE : profil, niveaux, badges, statistiques, historique, export/import et réinitialisation.
+LIFEPLAY is a mobile-first prototype for a student project. It includes:
+- My Life: daily tasks and the goal of the day.
+- Food Life: food stock, expiry dates and meal ideas.
+- IT Play: computer science quiz, explanations and XP points.
+- Mood Play: optional mood journal and break ideas.
+- LIFEPLAY CORE: profile, levels, badges, statistics, history, export/import and reset.
 
-## Lancer l'application
-### Méthode la plus simple
-Ouvrir `index.html` dans un navigateur récent. Les fonctions principales marchent localement. Certaines fonctions d'installation hors ligne (PWA) nécessitent un serveur local ou HTTPS.
+## Running the app
+### Simplest method
+Open `index.html` in a recent browser. The main features work locally. Some offline installation features (PWA) need a local server or HTTPS.
 
-### Serveur local recommandé
-Si Python est installé, ouvrir un terminal dans ce dossier et lancer :
+### Recommended local server
+If Python is installed, open a terminal in this folder and run:
 ```bash
 python -m http.server 8000
 ```
-Puis ouvrir `http://localhost:8000` dans le navigateur.
+Then open `http://localhost:8000` in your browser.
 
-Pour tester sur un téléphone, l'ordinateur et le téléphone doivent être sur le même réseau Wi-Fi et le serveur doit être accessible depuis le téléphone. Pour une vraie installation PWA, utiliser HTTPS sur un hébergement ou un environnement de test sécurisé.
+To test on a phone, the computer and the phone must be on the same Wi-Fi network and the server must be reachable from the phone. For a real PWA installation, use HTTPS on a hosting service or a secure test environment.
 
-## Données et limites
-- Les données sont enregistrées dans le `localStorage` du navigateur, sur l'appareil.
-- Il n'y a pas de compte en ligne, de synchronisation multi-appareils, de serveur ni de base de données distante.
-- Le budget du prototype peut être nul avec des outils gratuits. Un domaine, un hébergement ou un développement professionnel peuvent coûter plus cher.
-- Les idées de repas sont simples et ne remplacent pas un avis nutritionnel. Les rappels de dates sont des aides : vérifiez toujours l'état et l'étiquetage des aliments.
-- Le suivi d'humeur est un outil de bien-être personnel, pas un diagnostic médical.
+## Data and limitations
+- Data is saved in the browser's `localStorage`, on the device.
+- There is no online account, no multi-device sync, no server and no remote database.
+- The prototype budget can be zero with free tools. A domain, hosting or professional development may cost more.
+- Meal ideas are simple and do not replace nutritional advice. Date reminders are only an aid: always check the condition and labeling of food.
+- Mood tracking is a personal well-being tool, not a medical diagnosis.
 
-## Répartition possible de l'équipe
-1. Food Life : données alimentaires, dates et idées de repas.
-2. My Life : tâches, objectifs et habitudes.
-3. IT Play : quiz et contenu pédagogique.
-4. Mood Play : humeur, activités de pause et expérience utilisateur.
-5. LIFEPLAY Core : intégration, tests, documentation et présentation.
+## Possible team split
+1. Food Life: food data, dates and meal ideas.
+2. My Life: tasks, goals and habits.
+3. IT Play: quiz and educational content.
+4. Mood Play: mood, break activities and user experience.
+5. LIFEPLAY Core: integration, testing, documentation and presentation.
 
-Chaque membre devrait tester les fonctions des autres modules. Le prototype est une base de démonstration ; avant une diffusion publique, prévoyez des tests utilisateurs, une politique de confidentialité, des tests de sécurité et une vraie stratégie de sauvegarde.
+Each member should test the features of the other modules. The prototype is a demonstration base; before any public release, plan for user testing, a privacy policy, security testing and a real backup strategy.
 
+## Installing on a phone
+To install LIFEPLAY as a PWA, the files must be published at an HTTPS address. Simply opening `index.html` from the phone's storage is not enough to enable all PWA features. The manifest includes 192×192 and 512×512 icons.
 
-## Installation sur un téléphone
-Pour installer LIFEPLAY comme une PWA, les fichiers doivent être publiés sur une adresse HTTPS. Ouvrir simplement `index.html` depuis le stockage du téléphone ne suffit pas pour activer toutes les fonctions PWA. Le manifeste inclut des icônes 192×192 et 512×512.
+After publishing over HTTPS:
+- **Android / Chrome**: open the LIFEPLAY address, tap the ⋮ menu, then "Install app" or "Add to Home screen".
+- **iPhone / Safari**: open the address, tap Share, then "Add to Home Screen".
 
-Après publication sur HTTPS :
-- **Android / Chrome** : ouvre l'adresse de LIFEPLAY, touche le menu ⋮ puis « Installer l'application » ou « Ajouter à l'écran d'accueil ».
-- **iPhone / Safari** : ouvre l'adresse, touche Partager, puis « Sur l'écran d'accueil ».
-
-Les libellés peuvent varier selon le navigateur et le téléphone.
+Labels may vary depending on the browser and the phone.
